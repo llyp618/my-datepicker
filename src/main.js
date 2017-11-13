@@ -1,4 +1,12 @@
-import './polyfill'
-import './main.less'
-let [a, b] = [3, 5]
-console.log(a, b)
+export class Dialog {
+  constructor(config){
+    this.defaultConfig = {
+      name:'dialog'
+    }
+    this.name = (config && config.name) || this.defaultConfig.name
+  }
+  say(){
+    console.log(this.name)
+  }
+}
+

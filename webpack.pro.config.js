@@ -16,7 +16,8 @@ module.exports = {
 	output: {
 		path: distPath,
 		filename: '[name].js' ,
-		libraryTarget:'umd'
+    libraryTarget: 'umd',
+    // library: 'Dialog'
 	},
 	module: {
 		rules: [
